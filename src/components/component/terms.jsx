@@ -2,13 +2,13 @@ import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
 
-export function Component() {
+export function Terms() {
   return (
     (<div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50">
       <header className="px-4 lg:px-6 h-14 flex items-center">
         <Link className="flex items-center justify-center" href="#">
           <BotIcon className="h-6 w-6 text-[#55efc4]" />
-          <span className="sr-only">Bot Bazaar Inc.</span>
+          <span className="sr-only">Bot Builders Inc.</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
@@ -49,10 +49,10 @@ export function Component() {
                   experiences. Streamline your workflows, automate repetitive tasks, and connect with your customers
                   like never before.
                 </p>
-                
-                <div className="pt-4">
+              </div>
+              <div className="flex flex-col items-start space-y-4">
                 <Link
-                  className="inline-flex mr-3 h-9 items-center justify-center rounded-md bg-[#55efc4] px-4 py-2 text-sm font-medium text-gray-950 shadow transition-colors hover:bg-[#55efc4]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#55efc4] disabled:pointer-events-none disabled:opacity-50"
+                  className="inline-flex h-9 items-center justify-center rounded-md bg-[#55efc4] px-4 py-2 text-sm font-medium text-gray-950 shadow transition-colors hover:bg-[#55efc4]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#55efc4] disabled:pointer-events-none disabled:opacity-50"
                   href="#">
                   Get Started
                 </Link>
@@ -61,7 +61,6 @@ export function Component() {
                   href="#">
                   Learn More
                 </Link>
-                </div>
               </div>
             </div>
             <img
@@ -186,7 +185,7 @@ export function Component() {
       </main>
       <footer
         className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-400">© 2024 Bot Bazaar Inc. All rights reserved.</p>
+        <p className="text-xs text-gray-400">© 2024 Bot Builders Inc. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link className="text-xs hover:text-[#55efc4] underline-offset-4" href="#">
             Terms of Service

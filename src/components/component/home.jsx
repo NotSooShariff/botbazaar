@@ -1,6 +1,6 @@
 import Link from "next/link"
 
-export function tos() {
+export function Home() {
   return (
     (<div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50">
       <header className="px-4 lg:px-6 h-14 flex items-center">
