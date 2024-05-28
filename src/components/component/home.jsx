@@ -1,4 +1,6 @@
 import Link from "next/link"
+import { Input } from "@/components/ui/input"
+import { Button } from "@/components/ui/button"
 
 export function Home() {
   return (
@@ -32,97 +34,150 @@ export function Home() {
         </nav>
       </header>
       <main className="flex-1">
-        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-900">
-          <div className="container max-w-4xl px-4 md:px-6 space-y-8">
-            <div className="space-y-2">
-              <h1
-                className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-[#55efc4]">
-                Terms of Service
-              </h1>
-              <p className="text-gray-400 md:text-xl">Last updated: May 28, 2024</p>
+        <section className="w-full pt-12 md:pt-24 lg:pt-32 border-y">
+          <div className="px-4 md:px-6 space-y-10 xl:space-y-16">
+            <div
+              className="grid max-w-[1300px] mx-auto gap-4 px-4 sm:px-6 md:px-10 md:grid-cols-2 md:gap-16">
+              <div>
+                <h1
+                  className="lg:leading-tighter text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl xl:text-[3.4rem] 2xl:text-[3.75rem] text-[#55efc4]">
+                  Unleash the Power of Bots
+                </h1>
+                <p
+                  className="mx-auto max-w-[700px] text-gray-400 md:text-xl dark:text-gray-300">
+                  Our bot development platform empowers you to create intelligent and engaging conversational
+                  experiences. Streamline your workflows, automate repetitive tasks, and connect with your customers
+                  like never before.
+                </p>
+              </div>
+              <div className="flex flex-col items-start space-y-4">
+                <Link
+                  className="inline-flex h-9 items-center justify-center rounded-md bg-[#55efc4] px-4 py-2 text-sm font-medium text-gray-950 shadow transition-colors hover:bg-[#55efc4]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#55efc4] disabled:pointer-events-none disabled:opacity-50"
+                  href="#">
+                  Get Started
+                </Link>
+                <Link
+                  className="inline-flex h-9 items-center justify-center rounded-md border border-[#55efc4] bg-transparent px-4 py-2 text-sm font-medium shadow-sm transition-colors hover:bg-[#55efc4]/10 hover:text-[#55efc4] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#55efc4] disabled:pointer-events-none disabled:opacity-50"
+                  href="#">
+                  Learn More
+                </Link>
+              </div>
             </div>
-            <div className="prose prose-invert space-y-6">
-              <h2>1. Introduction</h2>
-              <p>
-                Welcome to Bot Builders Inc. ("Company", "we", "our", "us"). These Terms of Service ("Terms",
-                "Agreement") govern your use of our website located at botbuilders.com and any related products or
-                services (collectively, "Services").
+            <img
+              alt="Hero"
+              className="mx-auto aspect-[3/1] overflow-hidden rounded-t-xl object-cover"
+              height="300"
+              src="/placeholder.svg"
+              width="1270" />
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-900">
+          <div className="container space-y-12 px-4 md:px-6">
+            <div
+              className="flex flex-col items-center justify-center space-y-4 text-center">
+              <div className="space-y-2">
+                <div
+                  className="inline-block rounded-lg bg-[#55efc4] px-3 py-1 text-sm text-gray-950">Key Features</div>
+                <h2
+                  className="text-3xl font-bold tracking-tighter sm:text-5xl text-[#55efc4]">
+                  Elevate Your Bot Development
+                </h2>
+                <p
+                  className="max-w-[900px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                  Our platform offers a comprehensive suite of tools and features to streamline your bot development
+                  process and deliver exceptional conversational experiences.
+                </p>
+              </div>
+            </div>
+            <div
+              className="mx-auto grid items-start gap-8 sm:max-w-4xl sm:grid-cols-2 md:gap-12 lg:max-w-5xl lg:grid-cols-3">
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold text-[#55efc4]">Natural Language Processing</h3>
+                <p className="text-sm text-gray-400">
+                  Leverage advanced NLP capabilities to understand and respond to user inputs with precision and
+                  context.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold text-[#55efc4]">Conversational Flow Management</h3>
+                <p className="text-sm text-gray-400">
+                  Easily design and implement complex conversational flows to guide users through seamless interactions.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold text-[#55efc4]">Integrations and Automation</h3>
+                <p className="text-sm text-gray-400">
+                  Seamlessly integrate your bots with other tools and services, and automate repetitive tasks for
+                  increased efficiency.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold text-[#55efc4]">Analytics and Insights</h3>
+                <p className="text-sm text-gray-400">
+                  Gain valuable insights into user behavior and bot performance to continuously optimize your
+                  conversational experiences.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold text-[#55efc4]">Multilingual Support</h3>
+                <p className="text-sm text-gray-400">
+                  Develop bots that can communicate in multiple languages, reaching a wider audience and providing
+                  inclusive experiences.
+                </p>
+              </div>
+              <div className="grid gap-1">
+                <h3 className="text-lg font-bold text-[#55efc4]">Scalable and Secure Infrastructure</h3>
+                <p className="text-sm text-gray-400">
+                  Rely on our robust and scalable infrastructure to handle high-volume traffic and ensure the security
+                  of your bot deployments.
+                </p>
+              </div>
+            </div>
+            <div className="flex justify-center flex-col sm:flex-row items-start gap-4">
+              <Link
+                className="inline-flex h-10 items-center justify-center rounded-md bg-[#55efc4] px-8 text-sm font-medium text-gray-950 shadow transition-colors hover:bg-[#55efc4]/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#55efc4] disabled:pointer-events-none disabled:opacity-50"
+                href="#">
+                Contact Sales
+              </Link>
+              <Link
+                className="inline-flex h-10 items-center justify-center rounded-md border border-[#55efc4] bg-transparent px-8 text-sm font-medium shadow-sm transition-colors hover:bg-[#55efc4]/10 hover:text-[#55efc4] focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-[#55efc4] disabled:pointer-events-none disabled:opacity-50"
+                href="#">
+                Learn More
+              </Link>
+            </div>
+          </div>
+        </section>
+        <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-900">
+          <div
+            className="container grid items-center justify-center gap-4 px-4 text-center md:px-6">
+            <div className="space-y-3">
+              <h2
+                className="text-3xl font-bold tracking-tighter md:text-4xl/tight text-[#55efc4]">
+                Empower Your Business with Intelligent Bots
+              </h2>
+              <p
+                className="mx-auto max-w-[600px] text-gray-400 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
+                Streamline your operations, enhance customer engagement, and unlock new opportunities with our
+                cutting-edge bot development platform.
               </p>
-              <p>
-                By accessing or using our Services, you agree to be bound by these Terms and our Privacy Policy. If you
-                disagree with any part of the Terms, then you do not have permission to access the Services.
-              </p>
-              <h2>2. Intellectual Property</h2>
-              <p>
-                The Services and its original content, features, and functionality are and will remain the exclusive
-                property of Bot Builders Inc. and its licensors. The Services are protected by copyright, trademark, and
-                other laws of both the United States and foreign countries.
-              </p>
-              <p>
-                Our trademarks and trade dress may not be used in connection with any product or service without the
-                prior written consent of Bot Builders Inc.
-              </p>
-              <h2>3. User Accounts and Conduct</h2>
-              <p>
-                When you create an account with us, you must provide us with information that is accurate, complete, and
-                current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate
-                termination of your account on our Services.
-              </p>
-              <p>
-                You are responsible for safeguarding the password that you use to access the Services and for any
-                activities or actions under your password. You agree not to disclose your password to any third party.
-              </p>
-              <p>
-                You may not use the Services for any illegal or unauthorized purpose. You must not, in the use of the
-                Services, violate any laws in your jurisdiction (including but not limited to copyright laws).
-              </p>
-              <h2>4. Termination</h2>
-              <p>
-                We may terminate or suspend your account and bar access to the Services immediately, without prior
-                notice or liability, under our sole discretion, for any reason whatsoever, including without limitation
-                if you breach the Terms.
-              </p>
-              <p>
-                Upon termination, your right to use the Services will immediately cease. If you wish to terminate your
-                account, you may simply discontinue using the Services.
-              </p>
-              <h2>5. Limitation of Liability</h2>
-              <p>
-                In no event shall Bot Builders Inc., nor its directors, employees, partners, agents, suppliers, or
-                affiliates, be liable for any indirect, incidental, special, consequential or punitive damages,
-                including without limitation, loss of profits, data, use, goodwill, or other intangible losses,
-                resulting from (i) your access to or use of or inability to access or use the Services; (ii) any conduct
-                or content of any third party on the Services; (iii) any content obtained from the Services; and (iv)
-                unauthorized access, use or alteration of your transmissions or content, whether based on warranty,
-                contract, tort (including negligence) or any other legal theory, whether or not we have been informed of
-                the possibility of such damage, and even if a remedy set forth herein is found to have failed of its
-                essential purpose.
-              </p>
-              <h2>6. Governing Law</h2>
-              <p>
-                These Terms shall be governed and construed in accordance with the laws of California, United States,
-                without regard to its conflict of law provisions.
-              </p>
-              <p>
-                Our failure to enforce any right or provision of these Terms will not be considered a waiver of those
-                rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining
-                provisions of these Terms will remain in effect.
-              </p>
-              <h2>7. Changes to These Terms</h2>
-              <p>
-                We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a
-                revision is material, we will provide at least 30 days' notice prior to any new terms taking effect.
-                What constitutes a material change will be determined at our sole discretion.
-              </p>
-              <p>
-                By continuing to access or use our Services after any revisions become effective, you agree to be bound
-                by the revised Terms. If you do not agree to the new Terms, you are no longer authorized to use the
-                Services.
-              </p>
-              <h2>8. Contact Us</h2>
-              <p>
-                If you have any questions about these Terms, please contact us at
-                <a href="#">support@botbuilders.com</a>.{"\n                        "}
+            </div>
+            <div className="mx-auto w-full max-w-sm space-y-2">
+              <form className="flex space-x-2">
+                <Input
+                  className="max-w-lg flex-1 bg-gray-800 border-gray-700 text-gray-50 focus:border-[#55efc4] focus:ring-[#55efc4]"
+                  placeholder="Enter your email"
+                  type="email" />
+                <Button
+                  className="bg-[#55efc4] text-gray-950 hover:bg-[#55efc4]/90"
+                  type="submit">
+                  Sign Up
+                </Button>
+              </form>
+              <p className="text-xs text-gray-400">
+                Sign up to get notified when we launch.
+                <Link className="underline underline-offset-2" href="#">
+                  Terms & Conditions
+                </Link>
               </p>
             </div>
           </div>
