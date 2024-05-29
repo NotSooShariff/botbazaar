@@ -4,9 +4,9 @@ export function Refunds() {
   return (
     (<div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
+        <Link className="flex items-center justify-center" href="/">
           <BotIcon className="h-6 w-6 text-[#55efc4]" />
-          <span className="sr-only">Bot Builders Inc.</span>
+          <span className="sr-only">Bot Bazaar Inc.</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
@@ -44,7 +44,7 @@ export function Refunds() {
             <div className="prose prose-invert space-y-6">
               <h2>1. Introduction</h2>
               <p>
-                At Bot Builders Inc., we strive to provide our customers with the best possible experience. However, we
+                At Bot Bazaar Inc., we strive to provide our customers with the best possible experience. However, we
                 understand that circumstances may arise where you need to cancel your service or request a refund. This
                 Cancellation and Refund Policy outlines the terms and conditions under which we will process your
                 cancellation or refund request.
@@ -116,7 +116,7 @@ export function Refunds() {
       </main>
       <footer
         className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-400">© 2024 Bot Builders Inc. All rights reserved.</p>
+        <p className="text-xs text-gray-400">© 2024 Bot Bazaar Inc. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link className="text-xs hover:text-[#55efc4] underline-offset-4" href="#">
             Terms of Service

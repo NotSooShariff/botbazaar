@@ -4,9 +4,9 @@ export function Privacy() {
   return (
     (<div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
+        <Link className="flex items-center justify-center" href="/">
           <BotIcon className="h-6 w-6 text-[#55efc4]" />
-          <span className="sr-only">Bot Builders Inc.</span>
+          <span className="sr-only">Bot Bazaar Inc.</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
@@ -44,7 +44,7 @@ export function Privacy() {
             <div className="prose prose-invert space-y-6">
               <h2>1. Introduction</h2>
               <p>
-                Welcome to Bot Builders Inc. ("Company", "we", "our", "us"). This Privacy Policy explains how we
+                Welcome to Bot Bazaar Inc. ("Company", "we", "our", "us"). This Privacy Policy explains how we
                 collect, use, and disclose information about you when you use our website located at botbuilders.com and
                 any related products or services (collectively, "Services").
               </p>
@@ -63,9 +63,8 @@ export function Privacy() {
                 </li>
                 <li>
                   <strong>Information we collect automatically:</strong>
-                  We automatically collect certain information about your use of the Services, such as your IP address,
-                  device information, browser type, operating system, and information about how you interact with the
-                  Services.
+                  We collect only basic information such as your IP address and browser type depending on the bot 
+                  you're using for functionality and security purposes.
                 </li>
               </ul>
               <h2>3. How We Use Your Information</h2>
@@ -89,10 +88,6 @@ export function Privacy() {
                 <li>
                   With service providers who perform services on our behalf, such as hosting, data analysis, and
                   customer support.
-                </li>
-                <li>
-                  With law enforcement or other government authorities in response to a lawful request, subpoena, or
-                  court order.
                 </li>
                 <li>In connection with a merger, acquisition, or sale of all or a portion of our assets.</li>
               </ul>
@@ -126,7 +121,7 @@ export function Privacy() {
       </main>
       <footer
         className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-400">© 2024 Bot Builders Inc. All rights reserved.</p>
+        <p className="text-xs text-gray-400">© 2024 Bot Bazaar Inc. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link className="text-xs hover:text-[#55efc4] underline-offset-4" href="#">
             Terms of Service

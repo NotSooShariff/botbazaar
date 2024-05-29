@@ -4,9 +4,9 @@ export function Terms() {
   return (
     (<div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50">
       <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="#">
+        <Link className="flex items-center justify-center" href="/">
           <BotIcon className="h-6 w-6 text-[#55efc4]" />
-          <span className="sr-only">Bot Builders Inc.</span>
+          <span className="sr-only">Bot Bazaar Inc.</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
           <Link
@@ -44,7 +44,7 @@ export function Terms() {
             <div className="prose prose-invert space-y-6">
               <h2>1. Introduction</h2>
               <p>
-                Welcome to Bot Builders Inc. ("Company", "we", "our", "us"). These Terms of Service ("Terms",
+                Welcome to Bot Bazaar Inc. ("Company", "we", "our", "us"). These Terms of Service ("Terms",
                 "Agreement") govern your use of our website located at botbuilders.com and any related products or
                 services (collectively, "Services").
               </p>
@@ -55,12 +55,12 @@ export function Terms() {
               <h2>2. Intellectual Property</h2>
               <p>
                 The Services and its original content, features, and functionality are and will remain the exclusive
-                property of Bot Builders Inc. and its licensors. The Services are protected by copyright, trademark, and
+                property of Bot Bazaar Inc. and its licensors. The Services are protected by copyright, trademark, and
                 other laws of both the United States and foreign countries.
               </p>
               <p>
                 Our trademarks and trade dress may not be used in connection with any product or service without the
-                prior written consent of Bot Builders Inc.
+                prior written consent of Bot Bazaar Inc.
               </p>
               <h2>3. User Accounts and Conduct</h2>
               <p>
@@ -88,7 +88,7 @@ export function Terms() {
               </p>
               <h2>5. Limitation of Liability</h2>
               <p>
-                In no event shall Bot Builders Inc., nor its directors, employees, partners, agents, suppliers, or
+                In no event shall Bot Bazaar Inc., nor its directors, employees, partners, agents, suppliers, or
                 affiliates, be liable for any indirect, incidental, special, consequential or punitive damages,
                 including without limitation, loss of profits, data, use, goodwill, or other intangible losses,
                 resulting from (i) your access to or use of or inability to access or use the Services; (ii) any conduct
@@ -121,7 +121,7 @@ export function Terms() {
               </p>
               <h2>8. Contact Us</h2>
               <p>
-                If you have any questions about these Terms, please contact us at
+                If you have any questions about these Terms, please contact us at{" "}
                 <a href="#">osh.econnect@gmail.com</a>.{"\n                        "}
               </p>
             </div>
@@ -130,7 +130,7 @@ export function Terms() {
       </main>
       <footer
         className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-400">© 2024 Bot Builders Inc. All rights reserved.</p>
+        <p className="text-xs text-gray-400">© 2024 Bot Bazaar Inc. All rights reserved.</p>
         <nav className="sm:ml-auto flex gap-4 sm:gap-6">
           <Link className="text-xs hover:text-[#55efc4] underline-offset-4" href="#">
             Terms of Service
