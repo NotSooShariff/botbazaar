@@ -122,7 +122,7 @@ export function Terms() {
               <h2>8. Contact Us</h2>
               <p>
                 If you have any questions about these Terms, please contact us at
-                <a href="#">support@botbuilders.com</a>.{"\n                        "}
+                <a href="#">osh.econnect@gmail.com</a>.{"\n                        "}
               </p>
             </div>
           </div>

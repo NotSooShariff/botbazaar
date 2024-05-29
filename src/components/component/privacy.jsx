@@ -106,7 +106,7 @@ export function Privacy() {
               <p>
                 You have certain rights and choices with respect to your information, including the right to access,
                 correct, or delete your information. You can exercise these rights by contacting us at
-                <a href="#">support@botbuilders.com</a>.{"\n                      "}
+                <a href="#">osh.econnect@gmail.com</a>.{"\n                      "}
               </p>
               <h2>7. Changes to this Privacy Policy</h2>
               <p>
@@ -118,7 +118,7 @@ export function Privacy() {
               <p>
                 If you have any questions or concerns about this Privacy Policy or our data practices, please contact us
                 at
-                <a href="#">support@botbuilders.com</a>.{"\n                      "}
+                <a href="#">osh.econnect@gmail.com</a>.{"\n                      "}
               </p>
             </div>
           </div>
