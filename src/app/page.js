@@ -1,10 +1,10 @@
-import { Home } from '@/components/component/home';
 import React from 'react';
+import { HomePage } from '@/components/component/home';
 
-export default function HomePage() {
+export default function Home() {
   return (
     <div>
-      <Home/>
+      <HomePage/>
     </div>
   );
 }

@@ -1,36 +1,11 @@
 import Link from "next/link"
+import Navbar from "./navbar";
+import Footer from "./footer";
 
 export function Refunds() {
   return (
     (<div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="/">
-          <BotIcon className="h-6 w-6 text-[#55efc4]" />
-          <span className="sr-only">Bot Bazaar Inc.</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-sm font-medium hover:text-[#55efc4] underline-offset-4"
-            href="#">
-            Features
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-[#55efc4] underline-offset-4"
-            href="#">
-            Pricing
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-[#55efc4] underline-offset-4"
-            href="#">
-            About
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-[#55efc4] underline-offset-4"
-            href="#">
-            Contact
-          </Link>
-        </nav>
-      </header>
+      <Navbar/>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-900">
           <div className="container max-w-4xl px-4 md:px-6 space-y-8">
@@ -42,14 +17,14 @@ export function Refunds() {
               <p className="text-gray-400 md:text-xl">Last updated: May 28, 2024</p>
             </div>
             <div className="prose prose-invert space-y-6">
-              <h2>1. Introduction</h2>
+              <h2 className="text-[#55efc4]">1. Introduction</h2>
               <p>
                 At Bot Bazaar Inc., we strive to provide our customers with the best possible experience. However, we
                 understand that circumstances may arise where you need to cancel your service or request a refund. This
                 Cancellation and Refund Policy outlines the terms and conditions under which we will process your
                 cancellation or refund request.
               </p>
-              <h2>2. Cancellation Policy</h2>
+              <h2 className="text-[#55efc4]">2. Cancellation Policy</h2>
               <p>
                 You may cancel your subscription or service at any time. To initiate a cancellation, please contact our
                 support team at
@@ -61,7 +36,7 @@ export function Refunds() {
                 Please note that cancellation of your subscription or service does not automatically entitle you to a
                 refund. Refunds are subject to the terms outlined in the Refund Policy section below.
               </p>
-              <h2>3. Refund Policy</h2>
+              <h2 className="text-[#55efc4]">3. Refund Policy</h2>
               <p>
                 We understand that sometimes things don't go as planned, and you may need to request a refund. We will
                 consider refund requests on a case-by-case basis, taking into account the specific circumstances of your
@@ -78,7 +53,7 @@ export function Refunds() {
                 completed, as these represent costs that we have already incurred. Additionally, we reserve the right to
                 deny refund requests that we deem to be abusive or fraudulent.
               </p>
-              <h2>4. Refund Process</h2>
+              <h2 className="text-[#55efc4]">4. Refund Process</h2>
               <p>
                 To request a refund, please contact our support team at
                 <a href="#">osh.econnect@gmail.com</a>
@@ -90,21 +65,21 @@ export function Refunds() {
                 purchase. Please allow up to 10 business days for the refund to be processed and reflected in your
                 account.
               </p>
-              <h2>5. Exceptions and Limitations</h2>
+              <h2 className="text-[#55efc4]">5. Exceptions and Limitations</h2>
               <p>
                 We reserve the right to make exceptions to this Cancellation and Refund Policy on a case-by-case basis,
                 at our sole discretion. Additionally, this policy does not apply to any third-party products or services
                 that you may have purchased through our platform, as those are subject to the respective policies of the
                 third-party providers.
               </p>
-              <h2>6. Changes to this Policy</h2>
+              <h2 className="text-[#55efc4]">6. Changes to this Policy</h2>
               <p>
                 We may update this Cancellation and Refund Policy from time to time. If we make material changes, we
                 will provide you with at least 30 days' notice prior to the effective date of the changes. Your
                 continued use of our Services after the changes become effective constitutes your acceptance of the
                 revised policy.
               </p>
-              <h2>7. Contact Us</h2>
+              <h2 className="text-[#55efc4]">7. Contact Us</h2>
               <p>
                 If you have any questions or concerns about this Cancellation and Refund Policy, please contact our
                 support team at
@@ -114,18 +89,7 @@ export function Refunds() {
           </div>
         </section>
       </main>
-      <footer
-        className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t">
-        <p className="text-xs text-gray-400">© 2024 Bot Bazaar Inc. All rights reserved.</p>
-        <nav className="sm:ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-xs hover:text-[#55efc4] underline-offset-4" href="#">
-            Terms of Service
-          </Link>
-          <Link className="text-xs hover:text-[#55efc4] underline-offset-4" href="#">
-            Privacy
-          </Link>
-        </nav>
-      </footer>
+      <Footer/>
     </div>)
   );
 }

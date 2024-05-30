@@ -1,36 +1,10 @@
 import Link from "next/link"
+import Navbar from "./navbar";
 
 export function Terms() {
   return (
     (<div className="flex flex-col min-h-[100dvh] bg-gray-950 text-gray-50">
-      <header className="px-4 lg:px-6 h-14 flex items-center">
-        <Link className="flex items-center justify-center" href="/">
-          <BotIcon className="h-6 w-6 text-[#55efc4]" />
-          <span className="sr-only">Bot Bazaar Inc.</span>
-        </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            className="text-sm font-medium hover:text-[#55efc4] underline-offset-4"
-            href="#">
-            Features
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-[#55efc4] underline-offset-4"
-            href="#">
-            Pricing
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-[#55efc4] underline-offset-4"
-            href="#">
-            About
-          </Link>
-          <Link
-            className="text-sm font-medium hover:text-[#55efc4] underline-offset-4"
-            href="#">
-            Contact
-          </Link>
-        </nav>
-      </header>
+      <Navbar/>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-900">
           <div className="container max-w-4xl px-4 md:px-6 space-y-8">
@@ -42,7 +16,7 @@ export function Terms() {
               <p className="text-gray-400 md:text-xl">Last updated: May 28, 2024</p>
             </div>
             <div className="prose prose-invert space-y-6">
-              <h2>1. Introduction</h2>
+              <h2 className="text-[#55efc4]">1. Introduction</h2>
               <p>
                 Welcome to Bot Bazaar Inc. ("Company", "we", "our", "us"). These Terms of Service ("Terms",
                 "Agreement") govern your use of our website located at botbuilders.com and any related products or
@@ -52,7 +26,7 @@ export function Terms() {
                 By accessing or using our Services, you agree to be bound by these Terms and our Privacy Policy. If you
                 disagree with any part of the Terms, then you do not have permission to access the Services.
               </p>
-              <h2>2. Intellectual Property</h2>
+              <h2 className="text-[#55efc4]">2. Intellectual Property</h2>
               <p>
                 The Services and its original content, features, and functionality are and will remain the exclusive
                 property of Bot Bazaar Inc. and its licensors. The Services are protected by copyright, trademark, and
@@ -62,7 +36,7 @@ export function Terms() {
                 Our trademarks and trade dress may not be used in connection with any product or service without the
                 prior written consent of Bot Bazaar Inc.
               </p>
-              <h2>3. User Accounts and Conduct</h2>
+              <h2 className="text-[#55efc4]">3. User Accounts and Conduct</h2>
               <p>
                 When you create an account with us, you must provide us with information that is accurate, complete, and
                 current at all times. Failure to do so constitutes a breach of the Terms, which may result in immediate
@@ -76,7 +50,7 @@ export function Terms() {
                 You may not use the Services for any illegal or unauthorized purpose. You must not, in the use of the
                 Services, violate any laws in your jurisdiction (including but not limited to copyright laws).
               </p>
-              <h2>4. Termination</h2>
+              <h2 className="text-[#55efc4]">4. Termination</h2>
               <p>
                 We may terminate or suspend your account and bar access to the Services immediately, without prior
                 notice or liability, under our sole discretion, for any reason whatsoever, including without limitation
@@ -86,7 +60,7 @@ export function Terms() {
                 Upon termination, your right to use the Services will immediately cease. If you wish to terminate your
                 account, you may simply discontinue using the Services.
               </p>
-              <h2>5. Limitation of Liability</h2>
+              <h2 className="text-[#55efc4]">5. Limitation of Liability</h2>
               <p>
                 In no event shall Bot Bazaar Inc., nor its directors, employees, partners, agents, suppliers, or
                 affiliates, be liable for any indirect, incidental, special, consequential or punitive damages,
@@ -98,7 +72,7 @@ export function Terms() {
                 the possibility of such damage, and even if a remedy set forth herein is found to have failed of its
                 essential purpose.
               </p>
-              <h2>6. Governing Law</h2>
+              <h2 className="text-[#55efc4]">6. Governing Law</h2>
               <p>
                 These Terms shall be governed and construed in accordance with the laws of California, United States,
                 without regard to its conflict of law provisions.
@@ -108,7 +82,7 @@ export function Terms() {
                 rights. If any provision of these Terms is held to be invalid or unenforceable by a court, the remaining
                 provisions of these Terms will remain in effect.
               </p>
-              <h2>7. Changes to These Terms</h2>
+              <h2 className="text-[#55efc4]">7. Changes to These Terms</h2>
               <p>
                 We reserve the right, at our sole discretion, to modify or replace these Terms at any time. If a
                 revision is material, we will provide at least 30 days' notice prior to any new terms taking effect.
@@ -119,10 +93,10 @@ export function Terms() {
                 by the revised Terms. If you do not agree to the new Terms, you are no longer authorized to use the
                 Services.
               </p>
-              <h2>8. Contact Us</h2>
+              <h2 className="text-[#55efc4]">8. Contact Us</h2>
               <p>
                 If you have any questions about these Terms, please contact us at{" "}
-                <a href="#">osh.econnect@gmail.com</a>.{"\n                        "}
+                <a className="underline underline-offset-2" href="mailto:osh.econnect@gmail.com">osh.econnect@gmail.com</a>.{"\n                        "}
               </p>
             </div>
           </div>
