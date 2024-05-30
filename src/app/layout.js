@@ -5,8 +5,6 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
-
-
 const syne = Syne({
   subsets: ['latin'],
   display: 'swap',
