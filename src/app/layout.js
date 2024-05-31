@@ -33,7 +33,7 @@ export const metadata = {
         url: 'https://botbazaar.shop/1800x1600.png', 
         width: 1800,
         height: 1600,
-        alt: 'My custom alt',
+        alt: 'Bot Bazaar Website',
       },
     ],
     locale: 'en_US',
