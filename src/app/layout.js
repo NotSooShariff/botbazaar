@@ -19,18 +19,18 @@ export const metadata = {
   title: "Bot Bazaar",
   description: "Rediscover Automation",
   openGraph: {
-    title: 'Next.js',
-    description: 'The React Framework for the Web',
-    url: 'https://nextjs.org',
-    siteName: 'Next.js',
+    title: 'Bot Bazaar',
+    description: 'Rediscover Automation',
+    url: 'https://botbazaar.shop',
+    siteName: 'Bot Bazaar',
     images: [
       {
-        url: 'https://nextjs.org/og.png', // Must be an absolute URL
+        url: 'https://botbazaar.shop/800x600.png', 
         width: 800,
         height: 600,
       },
       {
-        url: 'https://nextjs.org/og-alt.png', // Must be an absolute URL
+        url: 'https://botbazaar.shop/1800x1600.png', 
         width: 1800,
         height: 1600,
         alt: 'My custom alt',
